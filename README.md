@@ -1,1 +1,1 @@
-# zipbomb
+# EarthMC
