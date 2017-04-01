@@ -34,55 +34,88 @@
         <div class="textarea center">
             <h2>Getting started</h2>
             <p>
-                EarthMC is a minecraft server with a "real" custom earth map. This guide will get you started on your adventure. Once you join, open the server world map in your browser by clicking the link: <a href="https://map.earthmc.xyz">map.earthmc.xyz</a>. You can view other towns you want to join or take coordinates of the map to find a place you want to settle. Gold ingots are used as currency and referred to as just "gold" or G for short. You get gold from mining and voting for the server by running <strong>/vote</strong> and then clicking on the links displayed.
-            </p>
-            <p>
-                You also need to know how to create vaults. Vaults store your gold. In order to create a vault you need a chest and a sign. Hold down "shift" on your keyboard and place your sign on the chest. on the first line write: <strong>[vault]</strong> with square brackets included. Type <strong>[town vault]</strong> on a sign to create a town vault. You can deposit gold from you inventory <strong>/deposit</strong> or pay someone from your vault <strong>/pay</strong>
+                EarthMC is a minecraft server with a "real" custom earth map. This guide will get you started on
+                your adventure. Once you join, open the server world map in your browser by clicking the link: <a href="https://map.earthmc.xyz">map.earthmc.xyz</a>.</br>
+                </br>
+                You can view other towns you want to join or check coordinates on the map to find a place you want
+                to settle in. Gold ingots are used as currency and referred to as just "gold" or G for short. You get
+                gold from mining and voting for the server by doing <strong>/vote</strong> and then clicking on the links displayed.
             </p>
             <hr>
             <h2 id="town">Creating a town</h2>
             <p>
-                In order to create a town you need 16 gold in your inventory. Make sure your stand in the area you want to settle your town in before running the command. Once you're ready, open chat and type:
-                <br>
-                <strong>/t new (townnamehere)</strong>
-                <br>
-                <p>
-                    Towns are safe from raiding and looting. Towns can only be raided during war day. Read more about war further down. Mayors (player that created the town) can toggle taxes, pvp ect. <br>
-                     Do <strong>/t toggle</strong> for more info.
-                </p>
+                In order to create a town you need 16 gold. Make sure you stand in the area you
+                want to settle your town in before running the command. Once you're ready, open chat and type: <strong>/t new (name)</strong><br />
+                <br />
+                Towns are safe from raiding and looting while not in a nation. Read more about war further down.
+                Mayors (player that created the town) can toggle taxes, pvp, firespread ect. <br />
+                Do <strong>/t toggle</strong> for more info.
             </p>
-            <h3>Adding members to your town</h3>
-            <p>In order to add people to your town run <strong>/t add (playername)</strong></p>
-            <h3>Expanding your town</h3>
+            <h3>Adding members to your town:</h3>
             <p>
-                Costs 10 gold. <strong>Gold must be in town vault</strong> (chest labaled [town vault]) in order to run the command. Command: <strong>/t claim</strong>
+                In order to add people to your town run <strong>/t add (player)</strong>
+            </p>
+            <h3>Expanding your town:</h3>
+            <p>
+                Costs 16 gold for each plot. <strong>Gold is taken from the town vault</strong>. Command: <strong>/t claim</strong>
             </p>
             <hr>
             <h2 id="nation">Creating a nation</h2>
             <p>
-                A nation is a collection of towns with one town as the capital. Nations can fight in wars and collect taxes from towns within the nation. You need 64 gold to create a nation <strong>/n new (nationnamehere)</strong>.
+                A nation is a collection of towns with one town as the capital. Nations can fight in wars and collect
+                taxes from towns within the nation. Towns may leave the nation whenever they wish. You need 64 gold to create a nation, taken from the town vault, using <strong>/n new (name)</strong>.
             </p>
             <hr>
-            <h2 id="war">War day</h2>
+            <h2 id="nation">Vaults</h2>
             <p>
-                War day can only be started by the admin "Fix". <strong>Make sure to join our discord channel to know when a war day is coming up!</strong>. Nations can fight in wars. Towns not in nations can not participate and they are safe from attackers. Nations can be neutral in wars by paying a fee of 32 gold. To see war progress, use the command <strong>/t war</strong>.
+                Vaults are chests that act as your bank account, many of the server's economy commands can use this gold without you having to carry it with you.<br />
+                <br />
+                In order to create one you
+                need a chest and a sign. Place your sign on the chest with shift-rightclick and on the first line type <strong>[vault]</strong> with the square brackets included.<br />
+                <br />
+                Type <strong>[town vault]</strong> on the sign to create a town vault or <strong>[nation vault]</strong> to create a nation vault. You can deposit gold from your inventory or personal vault to
+                town vaults with <strong>/t deposit</strong> and withdraw with <strong>/t withdraw</strong>. Same thing with nation vaults.
             </p>
+            <hr>
+            <h2 id="war">Wars</h2>
             <p>
-                All towns have "health" during war. Normal town blocks (16x16 minecraft block aka chunks, marked red on server world map) has 60 health points (HP). Home block has 120 HP. You town lose HP when enemies stand within the block. You can only attack blocks connected to wilderness first. When one of your town blocks are under attack a firework will appear above.
-            </p>
-            <p>
-                The war ends when all other nations are defeated or when Fix toggels war off. You will get your claimed land back afterwards although the greifing is permanant.
+                Wars may seem complicated and overwhelming at first. If you’re new and in a neutral town, you could skip this part for now.<br />
+                <br />
+                A nation can take plots from another by placing a “war flag” inside of their territory.<br />
+                <br />
+                You need to do /n enemy add (nation) to be able to attack the nation. Once you have done
+                this, you and your people will be able to place a fence in their border territory which will create the war flag for 5
+                gold. A player can only plant a single flag at a time and needs to have the gold in their personal vault.
+                This war flag will get a flashing block of wool on top of it and a floating 3x3 cube of wool far
+                above it in the sky to show the residents of the town where you are attacking.<br />
+                <br />
+                If the enemy manages to destroy your flag, you will lose the fight and have to pay 15 additional
+                gold to the defenders. To win the fight you have to hold on for 3 minutes.<br />
+                <br />
+                Remember, as soon as you declare an enemy they
+                will also be able to attack you. To be able to attack a town there must be at least 2 players online
+                in that town and at least 3 in total in their nation. Kicking/inviting players to be immune after
+                attacking is not allowed, report to staff if you see this happening.
             </p>
             <hr>
             <h2 id="donate">Donator rank</h2>
-            <p>Hosting a server costs money, time and energy. If you'd like to help out you can donate below. All money will go towards the server and the costs associated with hosting it. I don't sell any gameplay benefits because not only is it unfair but also against the EULA. However, you get some awesome cosmetic features listed below and most importantly you help the server keep running. Thanks for helping out, this is what you get in return:</p>
+            <p>
+                Hosting a server costs money, time and energy. If you'd like to help out you can donate below. All
+                money will go towards the server and the costs associated with hosting it. I don't sell any
+                gameplay benefits because not only is it unfair but also against the minecraft server EULA.<br />
+                <br />
+                However, you get some awesome cosmetic features listed below and most importantly you help
+                the server keep running. Thanks for helping out, this is what you get in return:
+            </p>
             <ul>
-                <li>Shiny yellow donator rank in minecraft and discord chat.</li>
-                <li>/hat command, place item over/on your head.</li>
-                <li>Access to /nick, change your in-game name</li>
-		<li>Have more say in server changes.</li>
-                <li>Access to private donator chat in Discord.</li>
-                <li>/seen command, know when someone was last seen online</li>
+                <li>Yellow donator rank in minecraft and discord chat. (Purple if you donate more than 20€).</li>
+                <li>/hat command, place an item over/on your head.</li>
+                <li>Access to /nick, change your in-game name.</li>
+		        <li>Get access to the donator lounge in spawn where your name will be posted on the board.</li>
+                <li>Access to private donator chat in Discord, have more say in server changes here.</li>
+                <li>/seen command, know when someone was last seen online.</li>
+                <li>/party, invite other players to a private chat channel in-game.</li>
+                <li>/playtime, check how much time you and others have spent on the server.</li>
                 <li>Make my day :)</li>
             </ul>
             <div class="donatebutton">
