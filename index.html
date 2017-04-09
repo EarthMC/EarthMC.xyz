@@ -28,6 +28,9 @@
                     <div class="navitem">
                         <a class="maplink" href="https://map.earthmc.xyz">World map</a>
                     </div>
+                    <div class="navitem">
+                        <a class="banappeals" href="https://discordapp.com/invite/rWnZUY8">Ban appeals</a>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -66,7 +69,7 @@
                 taxes from towns within the nation. Towns may leave the nation whenever they wish. You need 64 gold to create a nation, taken from the town vault, using <strong>/n new (name)</strong>.
             </p>
             <hr>
-            <h2 id="nation">Vaults</h2>
+            <h2 id="vaults">Vaults</h2>
             <p>
                 Vaults are chests that act as your bank account, many of the server's economy commands can use this gold without you having to carry it with you.<br />
                 <br />
@@ -96,6 +99,41 @@
                 will also be able to attack you. To be able to attack a town there must be at least 2 players online
                 in that town and at least 3 in total in their nation. Kicking/inviting players to be immune after
                 attacking is not allowed, report to staff if you see this happening.
+            </p>
+            <hr>
+            <h2 id="companies">Companies</h2>
+            <p>
+                A player can create a company, they can then deposit money into the company to get started or withdraw it from the company bank.<br />
+                <br />
+                A company owner can then set their own wages to be paid automatically, and can employ other players. The player can work and see their own rank and wages, they can also stock the company shops<br />
+                <br />
+                The initial company creator can sack employees, change wages, change rank (owner/manager/accountant/employee) and disband the company. Companies can also pay out all their profits to be shared between the employees.
+
+                <h3>Chest Shops</h3>
+                One way of the company making money is by selling goods. To create a chest shop first place a chest down, then above the chest place a wall sign with the following on it:<br />
+                <br />
+                1st line - [company]<br />
+                2nd line - The company name ( putting not your company name will break the sign) <br />
+                3rd line - The price all products in the chest will be sold at (must be integer) <br />
+                4th line - Anything you like <br />
+                <br />
+                If you did it correctly the top line should turn gold and provide you with a success message. Company employees can open the chests and take and deposit goods as a normal chest.<br />
+                <br />
+                If a non employee opens the chest they will see the products but clicking on them will purchase the item 1 at a time or shift click to purchase stack, sending the money to the company bank.
+
+                <h3>Employees</h3>
+                Employees may have the following ranks:<br />
+                <br />
+                Owner: can do anything to company hire fire disband or access bank<br />
+                Manager: Can hire or fire employees and create company shop signs<br />
+                Accountant: Can access the bank details and pay companies and players from the company bank.<br />
+                The employee can choose to leave a company at any time
+                <h3>Wages</h3>
+                Each employee has a wage from their company. This is set per player by the owner and paid automatically each Minecraft week.<br />
+                <br />
+                An owner can also choose to set his wagetype to percentage, where at payday the amount in the company bank (after wages) is then divided up between all the players (encouraging more work)<br />
+                <br />
+                If a company cannot pay its employees then the employee and owner are notified.
             </p>
             <hr>
             <h2 id="donate">Donator rank</h2>
