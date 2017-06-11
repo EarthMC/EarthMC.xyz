@@ -1,202 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <!--<link rel="icon" type="image/ico" href="img/icon.ico" />-->
-		<title>EarthMC</title>
-		<meta name="description" content="EarthMC is a minecraft server with a real earth map. Create towns, form communities and fight off enemies. Welcome!">
-		<meta charset="UTF-8"/>
+        <title>EarthMC</title>
+        <link rel="icon" href="img/world.ico" />
+        <meta name="description" content="EarthMC is a minecraft server with a custom earth map. Create towns, form communities and fight off enemies. Welcome!">
+        <meta charset="UTF-8"/>
         <meta name="robots" content="index, follow">
         <meta name="googlebot" content="code">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link type="text/css" rel="stylesheet" href="css/main.css"/>
         <meta name="author" content="Fix">
+        <meta property="og:title" content="EarthMC" />
+        <meta property="og:video" content="https://www.youtube.com/v/nJ3Wu4q5HSQ">
+        <meta property="og:description" content="EarthMC is a minecraft server with a custom earth map. Create towns, form communities and fight off enemies. Welcome!" />
     </head>
     <body>
-        <div class="splash">
-            <div class="splashwrap">
-                <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/nJ3Wu4q5HSQ" frameborder="0" allowfullscreen></iframe>
-                <h1 class="centertext">Welcome to EarthMC!</h1>
+        <div class="text">
+            <h1>EarthMC</h1>
+            <div class="youtube-video"><iframe src="https://www.youtube.com/embed/nJ3Wu4q5HSQ" frameborder="0" allowfullscreen></iframe></div>
 
-                <p class="centertext">IP: earthmc.xyz</p>
-                <nav>
-                    <div class="navitem">
-                        <a class="donatelink" href="#donate">Donate</a>
-                    </div>
-                    <div class="navitem">
-                        <a class="discordlink" href="https://discordapp.com/invite/UNTZTfu">Discord</a>
-                    </div>
-                    <div class="navitem">
-                        <a class="maplink" href="https://map.earthmc.xyz">World map</a>
-                    </div>
-                    <div class="navitem">
-                        <a class="banappeals" href="https://discordapp.com/invite/rWnZUY8">Ban appeals</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <div class="textarea center">
             <h2>Getting started</h2>
-            <p>
-                EarthMC is a minecraft server with a "real" custom earth map. This guide will get you started on
-                your adventure. Once you join, open the server world map in your browser by clicking the link: <a href="https://map.earthmc.xyz">map.earthmc.xyz</a>.</br>
-                </br>
-                You can view other towns you want to join or check coordinates on the map to find a place you want
-                to settle in. Gold ingots are used as currency and referred to as just "gold" or G for short. You get
-                gold from mining and voting for the server by doing <strong>/vote</strong> and then clicking on the links displayed.
-            </p>
-            <hr>
-            <h2 id="town">Creating a town</h2>
-            <p>
-                In order to create a town you need 16 gold. Make sure you stand in the area you
-                want to settle your town in before running the command. Once you're ready, open chat and type: <strong>/t new (name)</strong><br />
-                <br />
-                Towns are safe from raiding and looting while not in a nation. Read more about war further down.
-                Mayors (player that created the town) can toggle taxes, pvp, firespread ect. <br />
-                Do <strong>/t toggle</strong> for more info.
-            </p>
-            <h3>Adding members to your town:</h3>
-            <p>
-                In order to add people to your town do <strong>/t add (player)</strong>
-            </p>
-            <h3>Expanding your town:</h3>
-            <p>
-                Costs 16 gold for each plot. <strong>Gold is taken from the town vault</strong>. Command: <strong>/t claim</strong>
-            </p>
-            <hr>
-            <h2 id="nation">Creating a nation</h2>
-            <p>
-                A nation is a collection of towns with one town as the capital. Nations can fight in wars and collect
-                taxes from towns within the nation. Towns may leave the nation whenever they wish. You need 64 gold to create a nation, taken from the town vault, using <strong>/n new (name)</strong>.
-            </p>
-            <hr>
-            <h2 id="vaults">Vaults</h2>
-            <p>
-                Vaults are chests that act as your bank account, many of the server's economy commands can use this gold without you having to carry it with you.<br />
-                <br />
-                In order to create one you
-                need a chest and a sign. Place your sign on the chest with shift-rightclick and on the first line type <strong>[vault]</strong> with the square brackets included.<br />
-                <br />
-                Type <strong>[town vault]</strong> on the sign to create a town vault or <strong>[nation vault]</strong> to create a nation vault. You can deposit gold from your inventory or personal vault to
-                town vaults with <strong>/t deposit</strong> and withdraw with <strong>/t withdraw</strong>. Same thing with nation vaults.
-            </p>
-            <hr>
-            <h2 id="war">Wars</h2>
-            <p>
-                Wars may seem complicated and overwhelming at first. If you’re new and in a neutral town, you could skip this part for now.<br />
-                <br />
-                A nation can take plots from another by placing a “war flag” inside of their territory.<br />
-                <br />
-                You need to do /n enemy add (nation) to be able to attack the nation. Once you have done
-                this, you and your people will be able to place a fence in their border territory which will create the war flag for 5
-                gold. A player can only plant a single flag at a time and needs to have the gold in their personal vault.
-                This war flag will get a flashing block of wool on top of it and a floating 3x3 cube of wool far
-                above it in the sky to show the residents of the town where you are attacking.<br />
-                <br />
-                If the enemy manages to destroy your flag, you will lose the fight and have to pay 15 additional
-                gold to the defenders. To win the fight you have to hold on for 3 minutes.<br />
-                <br />
-                Remember, as soon as you declare an enemy they
-                will also be able to attack you. To be able to attack a town there must be at least 2 players online
-                in that town and at least 3 in total in their nation. Kicking/inviting players to be immune after
-                attacking is not allowed, report to staff if you see this happening.
-            </p>
-            <hr>
-            <h2 id="companies">Companies</h2>
-            <p>
-                A player can create a company, they can then deposit money into the company to get started or withdraw it from the company bank.<br />
-                <br />
-                A company owner can then set their own wages to be paid automatically, and can employ other players. The player can work and see their own rank and wages, they can also stock the company shops<br />
-                <br />
-                The initial company creator can sack employees, change wages, change rank (owner/manager/accountant/employee) and disband the company. Companies can also pay out all their profits to be shared between the employees.
+            <p><span class="highlight">EarthMC is a minecraft server with a custom made earth map</span>. This guide will get you started on your adventure. <span class="highlight">Join using the IP EarthMC.xyz</span>, join our <a href="https://www.discord.gg/6rAnxd8">discord server</a> and open the <a href="https://map.earthmc.xyz">server world map</a> your browser. You can view other towns you want to join or take coordinates of the map to find a place you want to settle. <span class="highlight">Gold ingots are used as currency</span> and referred to as just "gold" or G for short. You get gold from mining gold ore, raiding and voting (/vote). You also need know how to create vaults. <span class="highlight">Vaults store your gold</span>. In order to create a vault you need a chest and a sign. Hold down "shift" on your keyboard and place your sign on the chest. On the first line write: [vault] with square brackets included. Type [town vault] on a sign to create a town vault. You can deposit gold from your inventory to your town vault. <br><i>/t deposit</i></p>
+            <p><span class="highlight">Keep in mind that vaults doesn’t lock chests from other players</span>. If you want to protect your chest your best bet would be to place it in a private town plot.</p>
 
-                <h3>Chest Shops</h3>
-                One way of the company making money is by selling goods. To create a chest shop first place a chest down, then above the chest place a wall sign with the following on it:<br />
-                <br />
-                1st line - [company]<br />
-                2nd line - The company name ( putting not your company name will break the sign) <br />
-                3rd line - The price all products in the chest will be sold at (must be integer) <br />
-                4th line - Anything you like <br />
-                <br />
-                If you did it correctly the top line should turn gold and provide you with a success message. Company employees can open the chests and take and deposit goods as a normal chest.<br />
-                <br />
-                If a non employee opens the chest they will see the products but clicking on them will purchase the item 1 at a time or shift click to purchase stack, sending the money to the company bank.
-
-                <h3>Employees</h3>
-                Employees may have the following ranks:<br />
-                <br />
-                Owner: can do anything to company hire fire disband or access bank<br />
-                Manager: Can hire or fire employees and create company shop signs<br />
-                Accountant: Can access the bank details and pay companies and players from the company bank.<br />
-                The employee can choose to leave a company at any time
-                <h3>Wages</h3>
-                Each employee has a wage from their company. This is set per player by the owner and paid automatically each Minecraft week.<br />
-                <br />
-                An owner can also choose to set his wagetype to percentage, where at payday the amount in the company bank (after wages) is then divided up between all the players (encouraging more work)<br />
-                <br />
-                If a company cannot pay its employees then the employee and owner are notified.
-                <h3>Commands</h3>
-                <b>All:</b><br />
-                /company help - display commands<br />
-                /company info - display your company and employee info<br />
-                /company info <company> - display another company's info<br />
-                /company accept - accept a job offer<br />
-                /company decline - decline a job offer<br />
-                /company list - List all companies<br />
-                /company tp <company> - check teleport cost for that company<br />
-                /company tp <company> confirm - teleport to company HQ<br />
-                <br />
-                <b>Owners:</b><br />
-                /company start <name> - start a new company<br />
-                /company disband - Disband your company and sack all employees<br />
-                /company leave - Resign from your company<br />
-                /company set - Set company settings<br />
-                /company set wagetype <fixed/percentage>- set company wages to just fixed or shared between employees<br />
-                /company set trading <true/false>- Set company trading or not currently trading<br />
-                /company set desc <desc> - set your company description<br />
-                /company employee - Change employee settings, hire and sack, employees<br />
-                /company employee hire <player> <wage> - Offer a job to a player with a set wage<br />
-                /company employee wage <amount> - Set a players fixed wage<br />
-                /company employee rank <employee/owner> - set an employee's rank within the company<br />
-                /company employee list - List all your company's employees<br />
-                /company employee sack <player> <pay> - Sack an employee with redundancy pay (0 = nothing)<br />
-                /company pay <player/company> <name> <amount> - Pay another company or player<br />
-                /company bank - show bank and wage info<br />
-                /company bank withdraw <amount> - withdraw money from company bank<br />
-                /company bank deposit <amount> - deposit money into company bank
-            </p>
-            <hr>
-            <h2 id="donate">Donator rank</h2>
-            <p>
-                Hosting a server costs money, time and energy. If you'd like to help out you can donate below. All
-                money will go towards the server and the costs associated with hosting it. I don't sell any
-                gameplay benefits because not only is it unfair but also against the minecraft server EULA.<br />
-                <br />
-                However, you get some awesome cosmetic features listed below and most importantly you help
-                the server keep running. Thanks for helping out, this is what you get in return:
-            </p>
+            <h2 id="dynmap">Dynmap</h2>
+            <p>The interactive web map can be found at <a href="https://map.EarthMC.xyz">map.EarthMC.xyz</a>. <span class="highlight">In the top left corner of the map you can see coordinates which corresponds with minecraft coordinates</span>. This is a great tool to navigate the map. Below the coordinates you will find a menu where markers can be toggled. Move the mouse to the right of the screen to open a larger black menu. Here you can see who is online and change map type. The 2D map is set by default but you can also choose 3D or cave map.</p>
+            <p>There are several markers on the map and it could be useful to know what they mean,</p>
             <ul>
-                <li>Yellow donator rank in minecraft and discord chat. (Purple if you donate more than 20€).</li>
-                <li>/hat command, place an item over/on your head.</li>
-                <li>Access to /nick, change your in-game name.</li>
-		        <li>Get access to the donator lounge in spawn where your name will be posted on the board.</li>
-                <li>Access to private donator chat in Discord, have more say in server changes here.</li>
-                <li>/seen command, know when someone was last seen online.</li>
-                <li>/party, invite other players to a private chat channel in-game.</li>
-                <li>/playtime, check how much time you and others have spent on the server.</li>
-                <li>Make my day :)</li>
+                <li><img class="marker" src="img/blueflag.png" alt="Blue flag dynmap marker"> - Town part of a nation, click marker to see which nation it belongs to.</li>
+                <li><img class="marker" src="img/greenflag.png" alt="Green flag dynmap marker"> - Independent town not part of a nation.</li>
+                <li><img class="marker" src="img/king.png" alt="King dynmap marker"> - Nation capital.</li>
+                <li><img class="marker" src="img/world.png" alt="World dynmap marker"> - World spawn.</li>
             </ul>
-            <div class="donatebutton">
-                <a href="http://townyearth.buycraft.net/category/789805:">Donate</a>
-            </div>
-        </div>
-        <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-              ga('create', 'UA-43479048-10', 'auto');
-              ga('send', 'pageview');
-        </script>
+            <h2 id="town">Creating a town</h2>
+            <p><span class="highlight">In order to create a town you need 32 gold</span> in your inventory. Make sure your stand in the area you want to settle your town in before running the command. Once you're ready, open chat and type: <br><i>/t new (townnamehere)</i></p>
+            <p>Make sure your town name does not include a space or any special characters. Towns are safe from raiding and looting. Towns can only be raided during war only if they are part of a nation in war. Read more about war further down. Mayors (player that created the town) can toggle taxes, pvp ect. For more info, do <br><i>/t toggle</i><br></p>
+            <p>In order to expand your town one chunk you have to pay 16 gold and run <br><i>/t claim</i></p>
+            <p>This command will let you add town residents <br><i>/t add</i></p>
+            <p>All towny commands are listed on the official towny website, <a href="http://towny.palmergames.com/towny/towny-commands/">here</a>. In doubt, run: <br><i>/t ?</i></p>
+            <p>After 60 days of all town members being inactive the town is deleted to save up space. It only takes one member joining to reset the counter.</p>
+
+            <h2>Creating a nation</h2>
+            <p>A nation is a collection of towns with one town as the capital. The town which created the naiton is set as capital by default. Nations can fight in wars and collect taxes from towns within the nation. <span class="highlight">A nation costs 128 gold to create</span>, make sure you have this gold in your town vault before running <br><i>/n new (nationname)</i>. </p>
+            <p>Nations also have the ability to create outposts, a piece of land not connected to the capital. You need 32 gold in your nation vault to create an outpost.<br><i>/town claim outpost</i></p>
+
+
+            <h2 id="wars">Wars</h2>
+            <p>World wars can only be started by staff. Make sure to join our <a href="https://www.discord.gg/6rAnxd8">discord server</a> to know when a world war is coming up!</p>
+            <p><span class="highlight">Only towns in nations can participate in wars</span>, all other towns are safe from attackers. Nations can be neutral in world wars by typing by using the command <br><i>/nation toggle neutral</i></p>
+            <p>To see war progress, use the command <br><i>/t war.</i></p>
+            <p><span class="highlight">In order to attack a town you and your allies have to stand within enemy chunks</span>. Normal town plots have 40 health points while the home block has 60. A plot loses 1 HP every 5 seconds and the damage is multiplied by the number of enemies standing in it. You can also heal your own chunks by standing in them.</p>
+            <p>Once you are in the process of attacking, the defending town will be alerted by fireworks and coordinates in chat. You can only attack plots on the edge of a town/outpost. When a chunk is captured, attackers are able to place tnt and ladders inside of the territory to further breach into the town. Don’t worry, tnt explosions are rolled back automatically after a while.</p>
+            <p>The attacking town gets 5 gold after successfully taking a chunk. The gold is drawn from the defending town’s vault. This means that the <span class="highlight">town’s health during war is the gold in their town vault</span>. When the gold runs out that town is toggled neutral and can no longer participate in the war. <span class="highlight">A town also loses if their home block is taken</span>. A nation falls if the capital of the nation falls, which will remove all towns in the nation from the war.</p>
+            <p>If you are killed while in an enemy town you will be sent to their town jail (if it exists). To get out you will either need to pay a bail of 10 gold from your personal vault or get your allies to break you out. If a jail is taken all future captured players will be sent to another jail if there is one. <br><i>/r jail paybail</i></p>
+            <p>The war event ends when there is only one nation left or when staff toggles it off. Gold will then be awarded to the winners.</p>
+
+            <h2 id="sign_shop">Sign shops</h2>
+            <p>Selling items to other players is a great way to make gold. Trade signs allow you to sell specified items even when you are not online.</p>
+            <p>[trade]<br>(amountForEach) (get-item name/get-item id) <br>(amountForEach) (give-item name/give-item id):(totalAmount)</p>
+            <p>For example, if you would like to sell 20 dirt for 10 stone and have 300 dirt to sell your sign should look like this:</p>
+            <img src="img/sign.jpg" alt="Minecraft trade sign">
+            <p>You can also use <a href="http://minecraft-ids.grahamedgecombe.com/">block ID's</a> instead of block names (Eg. stone is replaced by 1 and dirt by 3).</p>
+            <p>If a person right clicks on the sign they will buy the amount specified on line 2 for the amount specified on line 3. If the owner right clicks on the sign they will get the items that have been paid to them, and if they do with the item they are selling in their hand they will refill the sign.</p>
+            <p>Players can destroy their own signs but not other's signs, mayors can destroy anyone’s signs in their town. This is so towns can have a kind of marketplace where players can put up and take down their own signs without other players in the town being able to destroy other’s signs.</p>
+            <p>Trade signs are further explained on the official essentials website found <a href="http://wiki.mc-ess.net/wiki/Sign_Tutorial#Trade_Sign">here</a></p>
+
+            <h2 id="ranks">Ranks</h2>
+            <p>You can set diffrent ranks for your town/nation members. This gives you the power to limit access but also grant your residents diffrent capabilities. <br><i>/town rank add (player) (rank)</i> or <i>/nation rank add (player) (rank)</i></label></p>
+            <ul>
+                <li>Town ranks</li>
+                <li><strong>chancellor</strong> - Has almost all of the commands the Mayor has.</li>
+                <li><strong>builder</strong> - A rank that has all public plot permissions everywhere in the town.</li>
+                <li><strong>trusted</strong> - A rank that has all private plot permissions everywhere in the town.</li>
+                <li><strong>recruiter</strong> - A rank that can invite people.</li>
+                <li><strong>police</strong> - Is able to jail other town members.</li>
+                <li><strong>tax-exempt</strong> - Pays no taxes.</li>
+                <li><strong>treasurer</strong> - Can use the town's economy.</li>
+            </ul>
+            <br>
+            <ul>
+                <li>Nation ranks</li>
+                <li><strong>chancellor</strong> - Has almost all of the commands the King has.</li>
+                <li><strong>colonist</strong> - Can invite to nation.</li>
+                <li><strong>Treasurer</strong> - Can use the nation's economy.</li>
+                <li><strong>Settler</strong> - can create outposts, recommended for mayors in the nation.</li>
+            </ul>
+            <br>
+            <ul>
+                <li>Server ranks</li>
+                <li><strong>Donator</strong> - Awesome people who support this community by paying the bills.</li>
+                <li><strong>Mod</strong> - Moderators.</li>
+                <li><strong>Dev</strong> - Working on game balance and plugins.</li>
+                <li><strong>Owner</strong> - Owner of server, working on plugins and physical server hardware<./li>
+            </ul>
+
+            <h2 id="rules">Rules and ban appeals</h2>
+            <p>There are a few rules that all players must follow but for the most part you're free to do whatever you want. These rules should not affect your gameplay style.</p>
+            <ul>
+                <li>#1 - No cheat clients, no hacking.</li>
+                <li>#2 - No alternative accounts</li>
+                <li>#3 - Don't intentionally cause lag</li>
+                <li>#4 - No spamming</li>
+                <li>#5 - Do not grief towns outside of wars</li>
+                <li>#6 - Staff may decide to take action against toxic players that affect the community as a whole</li>
+            </ul>
+            <br>
+            <p>Ban appeals are handled over att our ban appeals discord server, click <a href="https://www.discord.gg/rWnZUY8">here</a> to join.</p>
+
+            <section class="donatesection">
+                <div class="donatewrapper">
+                    <h2 id="donate">Donator rank</h2>
+                    <p>If you'd like to help keeping EarthMC alive you can donate below. All money will go towards the server and the costs associated with hosting it. As thanks you will receive some cool cosmetic features listed below.</p>
+                    <ul>
+                        <li>/hat command, place an item over/on your head. This will allow you to place your nation/town banner on your head, great for wars!</li>
+                        <li>Access to /nick, change your in-game name.</li>
+                        <li>Access to private donator chat in Discord, have more say in server changes here.</li>
+                        <li>/seen command, know when someone was last seen online.</li>
+                        <li>/playtime, check how much time you and others have spent on the server.</li>
+                        <li>/party, invite other players to a private chat channel in-game.</li>
+                        <li>Make my day :)</li>
+                    </ul>
+                    <div class="donatebutton">
+                        <a href="http://townyearth.buycraft.net/category/789805:">Donate</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </body>
 </html>
