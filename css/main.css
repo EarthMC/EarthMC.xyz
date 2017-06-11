@@ -103,10 +103,25 @@ ul {
     background-color: #dbe9fb;
 }
 
+.donatesection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donatewrapper {
+    justify-content: flex-end;
+}
+
 .donatebutton {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.donatesection ul {
+    list-style: initial;
 }
 
 .donatebutton a {
@@ -116,8 +131,4 @@ ul {
     text-decoration: none;
     color: #000;
     border-radius: 6px;
-}
-
-.donatesection {
-    height: 100vh;
 }
