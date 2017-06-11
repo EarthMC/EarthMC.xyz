@@ -4,24 +4,13 @@ margin: 0;
 padding: 0;
 }
 
-body {
-    color: #1E1E1E;
-    font-family: sans-serif;
-}
-
 html {
     overflow-y: scroll;
-    font-size: 137.5%;
-    -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-    font-family: ;
-    src: url(../fonts/.ttf);
 }
 
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 a:active,
@@ -43,95 +32,96 @@ input {
 }
 /*End of CSS bug fixes*/
 
-h1,
-h2,
-h3 {
-  /* Change heading typefaces here */
-  font-family: sans-serif;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  line-height: 1.5rem;
+body {
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
+
+.youtube-video {
+    position: relative;
+	padding-bottom: 52%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.youtube-video iframe, .video-container object, .video-container embed {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.text {
+    margin: auto;
+    color: #222;
+    max-width: 600px;
+    padding: 20px 20px 0px 20px;
+}
+
 h1 {
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-top: 3rem;
-}
-h2 {
-  font-size: 1.7rem;
-  line-height: 2.5rem;
-  margin-top: 3rem;
-}
-
-h3 {
-  font-size: 1rem;
-}
-
-p {
-  line-height: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-ul,
-ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  margin-left: 2.5rem;
-}
-ul li,
-ol li {
-  line-height: 1.5rem;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-strong {
-    font-style: italic;
-}
-
-hr {
-    margin-top: 3rem;
-}
-
-.center {
-    display: flex;
-    margin:auto;
-    max-width: 960px;
-    display: block;
-}
-
-.centertext {
+    color: #222;
+    font-weight: 100;
+    margin: 40px;
     text-align: center;
 }
 
-.textarea {
+h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 200;
 }
 
-.splash {
-    color: #fff;
-    background-color: #444444;
-    min-height: 80vh;
-    overflow:auto;
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+img {
+    margin: 0 auto 20px auto;
+    display: block;
+    max-width: 100%;
+}
+
+i {
+    line-height: 2.8;
+    margin-left: 10px;
+}
+
+ul {
+    color: #666;
+    line-height: 1.8;
+    list-style: none;
+}
+
+.marker {
+    display: inline-block;
+    margin: auto 0px auto 0px;
+    vertical-align: middle;
+}
+
+.highlight {
+    background-color: #dbe9fb;
+}
+
+.donatesection {
+    height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
-
-.splashwrap {
-
+.donatewrapper {
+    justify-content: flex-end;
 }
 
 .donatebutton {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.donatesection ul {
+    list-style: initial;
 }
 
 .donatebutton a {
@@ -141,52 +131,4 @@ hr {
     text-decoration: none;
     color: #000;
     border-radius: 6px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-}
-
-nav .navitem {
-    margin: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ccc;
-    padding: 10px 20px;
-    background-color: #333;
-}
-
-.discordlink:hover {
-    background-color: #7289DA;
-}
-
-.banappeals:hover {
-    background-color: #b72828;
-}
-
-.maplink:hover {
-    background-color: green;
-}
-
-.donatelink:hover {
-    background-color: gold;
-    color: #000;
-}
-
-@media screen and (max-width: 1000px) {
-    .textarea {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    p {
-        font-size: 0.9rem;
-        line-height: 1.3rem;
-    }
 }
