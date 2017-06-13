@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://www.hackerpepe.tk/sitemap.xml
+Sitemap: http://info.earthmc.xyz//sitemap.xml
