@@ -22,32 +22,80 @@
         <!-- Getting started -->
         <div>
             <h2>Getting started</h2>
-            <p><span class="highlight">EarthMC is a minecraft server with a custom made earth map</span>. This guide will get you started on your adventure. <span class="highlight">Join using the IP EarthMC.xyz</span>, join our <a href="https://www.discord.gg/6rAnxd8">discord server</a> and open the <a href="https://map.earthmc.xyz">server world map</a> your browser. You can view other towns you want to join or take coordinates of the map to find a place you want to settle. <span class="highlight">Gold ingots are used as currency</span> and referred to as "gold" or G for short. You get gold from mining gold ore, raiding and voting (/vote). You also need know how to create vaults. <span class="highlight">Vaults store your gold</span>. In order to create a vault you need a chest and a sign. Hold down "shift" on your keyboard and place your sign on the chest. On the first line write: [vault] with square brackets included. Type [town vault] on a sign to create a town vault. You can deposit gold from your inventory to your town vault. <br><i>/t deposit</i></p>
-            <p><span class="highlight">Keep in mind that vaults doesn’t lock chests from other players</span>. If you want to protect your chest your best bet would be to place it in a private town plot.</p>
+            <p>
+                EarthMC is a minecraft server with a custom made earth map.
+                This guide will get you started on your adventure.
+                Join the minecraft server using EarthMC.xyz, join our <a href="https://www.discord.gg/6rAnxd8">discord server with this link</a> and open the <a href="https://map.earthmc.xyz">dynmap with this link</a>.
+                You can view other towns you want to join or take coordinates of the map to find a place you want to settle.
+                Gold ingots are used as currency and referred to as "gold" or G for short. You can get gold from mining gold ore, stealing from others and voting using<br />
+                <i>/vote</i>
+            </p>
+            <p>
+                All towny commands are listed on the official towny website, <a href="http://towny.palmergames.com/towny/towny-commands/">here</a>.
+                In-game, run:<br>
+                <i>/towny ?</i>
+            </p>
+            <p>
+                All essentials commands are listed on the essentials wiki, <a href="http://wiki.mc-ess.net/doc/">here</a>.
+                In-game, run:<br>
+                <i>/essentials help</i>
+            </p>
         </div>
 
         <!-- Dynmap -->
         <div>
             <h2 id="dynmap">Dynmap</h2>
-            <p>The interactive web map can be found at <a href="https://map.EarthMC.xyz">map.EarthMC.xyz</a>. <span class="highlight">In the top left corner of the map you can see coordinates which corresponds with minecraft coordinates</span>. This is a great tool to navigate the map. Below the coordinates you will find a menu where markers can be toggled. Move the mouse to the right of the screen to open a larger black menu. Here you can see who is online and change map type. The 2D map is set by default but you can also choose 3D or cave map.</p>
-            <p>There are several markers on the map and it could be useful to know what they mean,</p>
+            <p>
+                The interactive web map can be found at <a href="https://map.earthmc.xyz">map.earthmc.xyz</a>.
+
+            <p>
+                The left side of the screen holds four tools, the zoom tool, the coordinate display, the layers selector, and the link creator.
+            </p>
+
+            <p>
+                The right side of the screen holds a menu for map selection and viewing the player list and a button to log in to the dynmap using an account created by running<br />
+                <i>/dynmap webregister</i>
+            </p>
+            <p>
+                <b>Glossary of map markers</b>
+            </p>
             <ul>
                 <li><img class="marker" src="img/blueflag.png" alt="Blue flag dynmap marker"> - Town part of a nation, click marker to see which nation it belongs to.</li>
                 <li><img class="marker" src="img/greenflag.png" alt="Green flag dynmap marker"> - Independent town not part of a nation.</li>
                 <li><img class="marker" src="img/king.png" alt="King dynmap marker"> - Nation capital.</li>
                 <li><img class="marker" src="img/world.png" alt="World dynmap marker"> - World spawn.</li>
-            </ul>
+            </ul><br />
+            <p>
+                Red areas on the map are claimed areas and blue areas are embassies.
+            </p>
         </div>
 
         <!-- Creating a town -->
         <div>
             <h2 id="town">Creating a town</h2>
-            <p><span class="highlight">In order to create a town you need 32 gold</span> in your inventory. Make sure your stand in the area you want to settle your town in before running the command. Once you're ready, open chat and type: <br><i>/t new (townnamehere)</i></p>
-            <p>Make sure your town name does not include a space or any special characters. Towns are safe from raiding and looting. Towns can only be raided during war only if they are part of a nation in war. Read more about war further down. Mayors (player that created the town) can toggle taxes, pvp ect. For more info, do <br><i>/t toggle</i><br></p>
-            <p><span class="highlight">In order to expand your town one chunk you have to pay 16 gold</span> and run <br><i>/t claim</i></p>
-            <p>This command will let you add town residents <br><i>/t add</i></p>
-            <p>All towny commands are listed on the official towny website, <a href="http://towny.palmergames.com/towny/towny-commands/">here</a>. In doubt, run: <br><i>/t ?</i></p>
-            <p>After 41 days of all town members being inactive the town is deleted to save up space. It only takes one member joining to reset the counter.</p>
+            <p>
+                In order to create a town you need to have 32 gold in your inventory.
+                Make sure to stand in the chunk you want to settle your town in before running the command.
+                Once you're ready, open chat and type:<br>
+                <i>/t new (townnamehere)</i>
+            </p>
+            <p>
+                Make sure your town name does not include a space or any special characters.
+                Towns are safe from raiding and looting as long as you don't invite the theif to your town or set your town permissions to allow their access.
+                Mayors can change town settings such as resident taxes, mob spawning or toggle pvp. For more info, use<br />
+                <i>/t toggle</i> and <i>/t set</i>
+            </p>
+            <p>
+                In order to expand your town one chunk you have to pay 16 gold and use<br />
+                <i>/t claim</i>
+            </p>
+            <p>
+                You can invite other players to your town using either<br />
+                <i>/t add (player)</i> or <i>/t invite (player)</i>
+            </p>
+            <p>
+                Players are kicked from towns after 42 days of inactivity and empty towns are disbanded.
+            </p>
         </div>
 
         <!-- Creating a nation -->
@@ -131,7 +179,7 @@
             </p>
             <p>
                 [trade]<br>
-                (amountForEach) (get-item name/get-item id) <br>
+                (amountForEach) (get-item name/get-item id) <br />
                 (amountForEach) (give-item name/give-item id):(totalAmount)
             </p>
             <p>
@@ -158,7 +206,7 @@
         <div>
             <h2 id="ranks">Ranks</h2>
             <p>
-                You can set diffrent ranks for your town/nation members. This gives you the power to limit access but also grant your residents diffrent capabilities.<br>
+                You can set diffrent ranks for your town/nation members. This gives you the power to limit access but also grant your residents diffrent capabilities.<br />
                 <i>/town rank add (player) (rank)</i> or <i>/nation rank add (player) (rank)</i>
             </p>
             <ul>
