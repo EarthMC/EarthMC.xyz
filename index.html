@@ -1,28 +1,33 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>EarthMC</title>
-        <link rel="icon" href="img/world.ico" />
-        <meta name="description" content="EarthMC is a minecraft server with a custom earth map. Create towns, form communities and fight off enemies. Welcome!">
-        <meta charset="UTF-8"/>
-        <meta name="robots" content="index, follow">
-        <meta name="googlebot" content="code">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        <link type="text/css" rel="stylesheet" href="css/main.css"/>
-        <meta name="author" content="Fix">
-        <meta property="og:title" content="EarthMC" />
-        <meta property="og:video" content="https://www.youtube.com/v/nJ3Wu4q5HSQ">
-        <meta property="og:description" content="EarthMC is a minecraft server with a custom earth map. Create towns, form communities and fight off enemies. Welcome!" />
-    </head>
-    <body>
-        <div class="text">
-            <h1>EarthMC</h1>
-            <div class="youtube-video"><iframe src="https://www.youtube.com/embed/nJ3Wu4q5HSQ" frameborder="0" allowfullscreen></iframe></div>
+<head>
+    <title>EarthMC</title>
+    <link rel="icon" href="img/world.ico" />
+    <meta name="description" content="EarthMC is a minecraft server with a custom earth map. Create towns, form communities and fight off enemies. Welcome!">
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="code">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <meta name="author" content="Fix">
+    <meta property="og:title" content="EarthMC" />
+    <meta property="og:video" content="https://www.youtube.com/v/nJ3Wu4q5HSQ">
+    <meta property="og:description" content="EarthMC is a minecraft server with a custom earth map. Create towns, form communities and fight off enemies. Welcome!" />
+</head>
+<body>
+    <div class="text">
+        <h1>EarthMC</h1>
+        <div class="youtube-video"><iframe src="https://www.youtube.com/embed/nJ3Wu4q5HSQ" frameborder="0" allowfullscreen></iframe></div>
 
+        <!-- Getting started -->
+        <div>
             <h2>Getting started</h2>
             <p><span class="highlight">EarthMC is a minecraft server with a custom made earth map</span>. This guide will get you started on your adventure. <span class="highlight">Join using the IP EarthMC.xyz</span>, join our <a href="https://www.discord.gg/6rAnxd8">discord server</a> and open the <a href="https://map.earthmc.xyz">server world map</a> your browser. You can view other towns you want to join or take coordinates of the map to find a place you want to settle. <span class="highlight">Gold ingots are used as currency</span> and referred to as "gold" or G for short. You get gold from mining gold ore, raiding and voting (/vote). You also need know how to create vaults. <span class="highlight">Vaults store your gold</span>. In order to create a vault you need a chest and a sign. Hold down "shift" on your keyboard and place your sign on the chest. On the first line write: [vault] with square brackets included. Type [town vault] on a sign to create a town vault. You can deposit gold from your inventory to your town vault. <br><i>/t deposit</i></p>
             <p><span class="highlight">Keep in mind that vaults doesn’t lock chests from other players</span>. If you want to protect your chest your best bet would be to place it in a private town plot.</p>
+        </div>
 
+        <!-- Dynmap -->
+        <div>
             <h2 id="dynmap">Dynmap</h2>
             <p>The interactive web map can be found at <a href="https://map.EarthMC.xyz">map.EarthMC.xyz</a>. <span class="highlight">In the top left corner of the map you can see coordinates which corresponds with minecraft coordinates</span>. This is a great tool to navigate the map. Below the coordinates you will find a menu where markers can be toggled. Move the mouse to the right of the screen to open a larger black menu. Here you can see who is online and change map type. The 2D map is set by default but you can also choose 3D or cave map.</p>
             <p>There are several markers on the map and it could be useful to know what they mean,</p>
@@ -32,7 +37,10 @@
                 <li><img class="marker" src="img/king.png" alt="King dynmap marker"> - Nation capital.</li>
                 <li><img class="marker" src="img/world.png" alt="World dynmap marker"> - World spawn.</li>
             </ul>
+        </div>
 
+        <!-- Creating a town -->
+        <div>
             <h2 id="town">Creating a town</h2>
             <p><span class="highlight">In order to create a town you need 32 gold</span> in your inventory. Make sure your stand in the area you want to settle your town in before running the command. Once you're ready, open chat and type: <br><i>/t new (townnamehere)</i></p>
             <p>Make sure your town name does not include a space or any special characters. Towns are safe from raiding and looting. Towns can only be raided during war only if they are part of a nation in war. Read more about war further down. Mayors (player that created the town) can toggle taxes, pvp ect. For more info, do <br><i>/t toggle</i><br></p>
@@ -40,58 +48,119 @@
             <p>This command will let you add town residents <br><i>/t add</i></p>
             <p>All towny commands are listed on the official towny website, <a href="http://towny.palmergames.com/towny/towny-commands/">here</a>. In doubt, run: <br><i>/t ?</i></p>
             <p>After 41 days of all town members being inactive the town is deleted to save up space. It only takes one member joining to reset the counter.</p>
+        </div>
 
+        <!-- Creating a nation -->
+        <div>
             <h2>Creating a nation</h2>
-            <p>A nation is a collection of towns with one town as the capital. The town which created the naiton is set as capital by default. Nations can fight in wars and collect taxes from towns within the nation. <span class="highlight">A nation costs 128 gold to create with an upkeep of 2 gold/24h (real life hours)</span>. Upkeep is taken from nation vault. Nation will be removed if you fail to pay upkeep. Make sure you have enough gold (128) in your town vault before running <br><i>/n new (nationname)</i>. </p>
-            <p>Nations also have the ability to create outposts, a piece of land not connected to the capital. You need 32 gold in your nation vault to create an outpost.<br><i>/town claim outpost</i></p>
+            <p>
+                Town mayors may create nations to join together with other towns.
+                Nations have a capital town which has a king instead of a mayor.
+                Nations can fight in wars and collect taxes from towns within the nation.
+            </p>
+            <p>
+                A nation costs 128 gold to create and currently has no upkeep costs but this may be reintroduced in the future.
+                Upkeep is taken from the nation vault. A nation will be removed if it fails to pay upkeep.
+                Make sure you have enough gold (128) in your town vault before running <br />
+                <i>/n new (nationname)</i>.
+            </p>
+            <p>
+                Towns in nations also have the ability to create outposts, a piece of land not connected to the capital.
+                You need 32 gold in your town vault to create an outpost.<br />
+                <i>/town claim outpost</i>
+            </p>
+        </div>
 
-
+        <!-- Wars -->
+        <div>
             <h2 id="wars">Wars</h2>
-            <p>World wars can only be started by staff. Make sure to join our <a href="https://www.discord.gg/6rAnxd8">discord server</a> to know when a world war is coming up!</p>
+            <p>
+                World wars can only be started by staff. Make sure to join our <a href="https://www.discord.gg/6rAnxd8">discord server</a> to know when a world war is coming up!
+            </p>
+            <p>
+                All towns in nations will take part in the war, towns out of nations can not participate.
+            </p>
+            <p>
+                To see war progress, use the command <br />
+                <i>/t war.</i>
+            </p>
+            <p>
+                In order to attack a town you and your allies have to siege enemy plots by standing in them until you get in to the home block.
+                Players may only siege plots on the edge of the town, so you have to work yourselves inward. Towns will fall when their home blocks are captured.
+            </p>
+            <p>
+                Normal town plots have 16 health points while the home block has 64.
+                A plot loses 1 HP every 5 seconds and the damage is multiplied by the number of enemies standing in it.
+                You can also heal your own plots by standing in them.
+            </p>
+            <p>
+                Once you are in the process of attacking, the defending town will be alerted by fireworks and coordinates in chat.
+                Attackers are able to place tnt and ladders inside of enemy territory to breach into the town.
+                Don’t worry, exploded blocks regenerate after a minute.
+            </p>
+            <p>
+                An entire nation will fall if their king is assasinated or if the capital is sieged. All towns in the nation fall if the nation falls.
+            </p>
+            <p>
+                Nations may ally with others. Allied nations can heal each other's plots and their players cannot harm each other.<br />
+                <i>/nation ally add/remove (nationname)</i>
+            </p>
+            <p>
+                If you are killed while in an enemy town you will be sent to their town jail (if it exists).
+                To get out you will either need to pay a bail of 10 gold from your personal vault or get your allies to break you out.
+                If a jail is taken all future captured players will be sent to another jail if there is one. <br />
+                <i>/r jail paybail</i>
+            </p>
+            <p>
+                If you're a <a href="https://info.earthmc.xyz/#donate">donator</a> you can place your nation's banner on your head. Good way to represent your nation during wartime.
+            </p>
+            <p>
+                The war event ends when there is only one nation or alliance of nations left. The winning town, the town with the most points, will then host a winner's ceremony where they are awarded a special trophy.
+            </p>
+            <p>
+                Towns get 10 points if their players siege enemy plots, 30 extra points for defeating a town, 100 extra points for defeating a nation and 10 points per player kill.
+            </p>
+        </div>
 
-            <p>All towns in nations will take part in the war, towns out of nations can not participate.</p>
-
-            <p>To see war progress, use the command <br><i>/t war.</i></p>
-
-            <p>In order to attack a town you and your allies have to siege enemy plots by standing in them until you get in to the home block.
-            Players may only siege plots on the edge of the town, so you have to work yourselves inward. Towns will fall when their home blocks are captured.</p>
-
-            <p>Normal town plots have 16 health points while the home block has 64. 
-            A plot loses 1 HP every 5 seconds and the damage is multiplied by the number of enemies standing in it. 
-            You can also heal your own plots by standing in them.</p>
-
-            <p>Once you are in the process of attacking, the defending town will be alerted by fireworks and coordinates in chat. 
-            Attackers are able to place tnt and ladders inside of enemy territory to breach into the town. 
-            Don’t worry, exploded blocks regenerate after a minute.</p>
-
-            <p>An entire nation will fall if their king is assasinated or if the capital is sieged. All towns in the nation fall if the nation falls. </p>
-
-            <p>Nations may ally with others. Allied nations can heal each other's plots and their players cannot harm each other.<br/>
-            <i>/nation ally add/remove (nationname)</i></p>
-
-            <p>If you are killed while in an enemy town you will be sent to their town jail (if it exists). 
-            To get out you will either need to pay a bail of 10 gold from your personal vault or get your allies to break you out. 
-            If a jail is taken all future captured players will be sent to another jail if there is one. <br/>
-            <i>/r jail paybail</i></p>
-
-            <p>If you're a <a href="https://info.earthmc.xyz/#donate">donator</a> you can place your nation's banner on your head. Good way to represent your nation during wartime.</p>
-
-            <p>The war event ends when there is only one nation or alliance of nations left. The winning town, the town with the most points, will then host a winner's ceremony where they are awarded a special trophy. </p>
-
-            <p>Towns get 10 points if their players siege enemy plots, 30 extra points for defeating a town, 100 extra points for defeating a nation and 10 points per player kill.</p>
-
+        <!-- Sign shops -->
+        <div>
             <h2 id="sign_shop">Sign shops</h2>
-            <p>Selling items to other players is a great way to make gold. Trade signs allow you to sell specified items even when you are not online.</p>
-            <p>[trade]<br>(amountForEach) (get-item name/get-item id) <br>(amountForEach) (give-item name/give-item id):(totalAmount)</p>
-            <p>For example, if you would like to sell 20 dirt for 10 stone and have 300 dirt to sell your sign should look like this:</p>
+            <p>
+                Selling items to other players is a great way to make gold.
+                Trade signs allow you to sell specified items even when you are not online.
+            </p>
+            <p>
+                [trade]<br>
+                (amountForEach) (get-item name/get-item id) <br>
+                (amountForEach) (give-item name/give-item id):(totalAmount)
+            </p>
+            <p>
+                For example, if you would like to sell 20 dirt for 10 stone and have 300 dirt to sell your sign should look like this:
+            </p>
             <img src="img/sign.jpg" alt="Minecraft trade sign">
-            <p>You can also use <a href="http://minecraft-ids.grahamedgecombe.com/">block ID's</a> instead of block names if the text gets too long (Eg. stone is replaced by 1 and dirt by 3).</p>
-            <p>If a person right clicks on the sign they will buy the amount specified on line 2 for the amount specified on line 3. If the owner right clicks on the sign they will get the items that have been paid to them, and if they do with the item they are selling in their hand they will refill the sign.</p>
-            <p>Players can destroy their own signs but not other's signs, mayors can destroy anyone’s signs in their town. This is so towns can have a kind of marketplace where players can put up and take down their own signs without other players in the town being able to destroy other’s signs.</p>
-            <p>Trade signs are further explained on the official essentials website found <a href="http://wiki.mc-ess.net/wiki/Sign_Tutorial#Trade_Sign">here</a></p>
+            <p>
+                You can also use <a href="http://minecraft-ids.grahamedgecombe.com/">block ID's</a> instead of block names if the text gets too long (Eg. stone is replaced by 1 and dirt by 3).
+            </p>
+            <p>
+                If a person right clicks on the sign they will buy the amount specified on line 2 for the amount specified on line 3.
+                If the owner right clicks on the sign they will get the items that have been paid to them, and if they do with the item they are selling in their hand they will refill the sign.
+            </p>
+            <p>
+                Players can destroy their own signs but not other's signs, mayors can destroy anyone’s signs in their town.
+                This is so towns can have a kind of marketplace where players can put up and take down their own signs without other players in the town being able to destroy other’s signs.
+            </p>
+            <p>
+                Trade signs are further explained on the official essentials website found <a href="http://wiki.mc-ess.net/wiki/Sign_Tutorial#Trade_Sign">here</a>
+            </p>
+        </div>
 
+        <!-- Ranks -->
+        <div>
             <h2 id="ranks">Ranks</h2>
-            <p>You can set diffrent ranks for your town/nation members. This gives you the power to limit access but also grant your residents diffrent capabilities. <br><i>/town rank add (player) (rank)</i> or <i>/nation rank add (player) (rank)</i></p>
+            <p>
+                You can set diffrent ranks for your town/nation members. This gives you the power to limit access but also grant your residents diffrent capabilities.<br>
+                <i>/town rank add (player) (rank)</i> or <i>/nation rank add (player) (rank)</i>
+            </p>
             <ul>
                 <li>Town ranks</li>
                 <li><strong>Councillor</strong> - Has almost all of the commands the Mayor has.</li>
@@ -117,13 +186,21 @@
                 <li><strong>Mod</strong> - Enforces rules, helps players with technical issues and answer player questions.</li>
                 <li><strong>Owner/Admin</strong> - Administrates the server, website and forum and fixes all sorts of technical issues.</li>
             </ul>
+        </div>
 
+        <!-- Support -->
+        <div>
             <h2 id="support">Support</h2>
             <p>For support please use the support bot in the #support-bot channel in Discord.</p>
-            <br>
+        </div>
 
+        <!-- Rules and ban appeals -->
+        <div>
             <h2 id="rules">Rules and ban appeals</h2>
-            <p>There are a few rules listed below that all players must follow. The rules are often updated and the most up-to-date list is always in the discord #info channel.</p>
+            <p>
+                There are a few rules listed below that all players must follow.
+                The rules are often updated and the most up-to-date list is always in the discord #info channel.
+            </p>
             <ul>
                 <li>#1 - No cheat clients, no hacking.</li>
                 <li>#2 - You may not play on several accounts.</li>
@@ -138,29 +215,37 @@
                 <li>#11 - Do not impersonate others. This includes for example: username, nickname or naming your town/nation something intentionally very similar.</li>
             </ul>
             <br>
-            <p>Ban appeals are handled over att our ban appeals discord server, click <a href="https://www.discord.gg/rWnZUY8">here</a> to join.</p>
-
-            <section class="donatesection">
-                <div class="donatewrapper">
-                    <h2 id="donate">Donate</h2>
-                    <p>If you'd like to help keeping EarthMC alive you can donate below. All money will go towards the server and the costs associated with hosting it. As thanks you will receive some cool cosmetic features listed below.</p>
-                    <ul>
-                        <li>/hat command, place an item over/on your head. This will allow you to place your nation/town banner on your head, great for wars!</li>
-                        <li>Access to /nick, change your in-game name.</li>
-                        <li>Access to private donator chat in Discord, have more say in server changes here.</li>
-                        <li>/seen command, know when someone was last seen online.</li>
-                        <li>/playtime, check how much time you and others have spent on the server.</li>
-                        <li>Yellow colored rank both in-game and in our <a href="https://www.discord.gg/6rAnxd8">discord server</a>. If you donate 20$ you get a purple rank instead.</li>
-                        <li>/party, invite other players to a private chat channel in-game.</li>
-                        <li>Make my day :)</li>
-                    </ul>
-                    <div class="donatebutton">
-                        <a href="https://townyearth.buycraft.net/category/789805:">Donate</a>
-                    </div>
-                </div>
-            </section>
+            <p>
+                Ban appeals are handled over att our ban appeals discord server, click <a href="https://www.discord.gg/rWnZUY8">here</a> to join.
+            </p>
         </div>
-        <script>
+
+        <!-- Donate -->
+        <section class="donatesection">
+            <div class="donatewrapper">
+                <h2 id="donate">Donate</h2>
+                <p>
+                    If you'd like to help keeping EarthMC alive you can donate below.
+                    All money will go towards the server and the costs associated with hosting it, we do not take any of it for ourselves.
+                    As thanks you will receive some cool cosmetic features listed below.
+                </p>
+                <ul>
+                    <li>/hat command, place an item over/on your head. This will allow you to place your nation/town banner on your head, great for wars!</li>
+                    <li>Access to /nick, change your in-game name.</li>
+                    <li>Access to private donator chat in Discord, have more say in server changes here.</li>
+                    <li>/seen command, know when someone was last seen online.</li>
+                    <li>/playtime, check how much time you and others have spent on the server.</li>
+                    <li>Yellow colored rank both in-game and in our <a href="https://www.discord.gg/6rAnxd8">discord server</a>. If you donate 20$ you get a purple rank instead.</li>
+                    <li>/party, invite other players to a private chat channel in-game.</li>
+                    <li>Make my day :)</li>
+                </ul>
+                <div class="donatebutton">
+                    <a href="https://townyearth.buycraft.net/category/789805:">Donate</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -168,6 +253,6 @@
 
           ga('create', 'UA-43479048-10', 'auto');
           ga('send', 'pageview');
-        </script>
-    </body>
+    </script>
+</body>
 </html>
